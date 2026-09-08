@@ -1,6 +1,6 @@
 // ==== GANTI DUA NILAI INI ====
 const SECRET_TOKEN = 'kza8EidGGt6YGUFIQugQ9TjZv4sfaLOp'; // harus sama dengan yang ada di URL ?key=
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwQc-vtoXmrb_DdUXfafhilxZ7THPpCgPXJ1BzvGtcfRjfxJHPM_J5edDhMZDYppLK4/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzchm_jH2BWh1Pla5_-Yvoo0pZpMKkd7NRlTfeMkt8G9V4lXYGI_wGmVNXtWACgpFIX/exec';
 // ==============================
 
 const params = new URLSearchParams(window.location.search);
