@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gudang Gambar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="gate" class="screen">
+    <div class="card">
+      <h1>Akses ditolak</h1>
+      <p>Halaman ini butuh kunci akses yang valid di tautan.</p>
+    </div>
+  </div>
+
+  <div id="app" class="screen hidden">
+    <header>
+      <h1 class="rgbText">Gudang Gambar</h1>
+      <p class="subtitle">Simpan gambar, dapatkan tautan siap pakai.</p>
+    </header>
+
+    <main class="card rgbBorder">
+      <form id="uploadForm">
+        <label class="dropzone" id="dropzone" for="fileInput">
+          <span id="dropzoneText">Ketuk untuk pilih gambar</span>
+          <img id="preview" class="hidden">
+        </label>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+
+        <input type="password" id="pinInput" placeholder="Masukkan PIN" inputmode="numeric" autocomplete="off">
+
+        <button type="submit" id="submitBtn" disabled>Unggah</button>
+      </form>
+
+      <div id="status" class="status hidden"></div>
+
+      <div id="resultBox" class="result hidden">
+        <label>Tautan gambar</label>
+        <div class="linkRow">
+          <input type="text" id="resultLink" readonly>
+          <button id="copyBtn" type="button">Salin</button>
+        </div>
+      </div>
+    </main>
+
+    <section id="history" class="history hidden">
+      <h2>Riwayat unggahan (sesi ini)</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
